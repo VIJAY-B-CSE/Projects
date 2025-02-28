@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    padding-left: 35px;
+}
+
+.books{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book{
+    padding: 15px;
+    background-color: rgb(80, 72, 72);
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    width: 40%;
+    overflow-wrap: break-word;
+    h2{
+        color: red;
+    }
+    h5{
+        margin-top: 5px;
+    }
+   p{
+    background-color: #f99;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 8px;
+   }
+
+    button{
+        background-color: red;
+        padding: 8px;
+        margin-top: 7px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.delete-book:hover{
+    background-color: blue;
+    box-shadow: 0 0 5px blue;
+    color: white;
+}
+
+#book-btn{
+    background-color: red;
+    padding: 20px;
+    border-radius: 100%;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#book-btn:hover{
+    background-color: blue;
+    box-shadow: 0 0 10px blue;
+    color: white;
+}
+
+.layer{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    display: none;
+    z-index: 1;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(214, 203, 203);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    input{
+        height: 35px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        text-indent: 10px;
+    }
+
+    label{
+        font-weight: bold;
+    }
+}
+
+.add-btn{
+    background-color: red;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 10px;
+}
+
+.add-btn:hover{
+    background-color: blue;
+    box-shadow: 0 0 10px blue;
+    color: white;
+}
+
+@media screen and (max-width: 480px){
+    .book{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .form{
+        width: 90%;
+    }
+    
+}
+
+
+

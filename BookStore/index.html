@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" type="image/png">
+  </head>
+  <body>
+        <!-- nav-bar -->
+        <nav>
+        <h1>Book Store</h1>
+        </nav>
+
+        <div class="books"></div>
+        <!-- add button -->
+        <button title="Add New Book" id="book-btn">+</button>
+
+        <div class="layer"></div>
+
+        <form action="" class="form">
+            <label for="book-title">Enter Book Title :</label>
+            <input type="text" id="book-title" name="book-title" required />
+            <br />
+            <label for="author-name">Enter Author Name :</label>
+            <input type="text" id="author-name" name="author-name" required />
+            <br />
+            <label for="content">Enter Content :</label>
+            <input type="text" id="content" name="content" required />
+            <br />
+            <button class="add-btn" id="book-add" title="Add Book">ADD</button>
+            <button class="add-btn" id="book-close" title="Close Form">CLOSE</button>
+        </form>
+        <script src="index.js"></script>
+  </body>
+</html>
